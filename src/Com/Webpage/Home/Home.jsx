@@ -1,10 +1,11 @@
 import React from 'react'
 import './Home.css'
-import FilterComponent from '../FilterComponent/FilterComponent'
 
 const Home = () => {
   return (
     <div>
+   <Slider/>
+   <Secure/>
    
       <FilterComponent />
     </div>
