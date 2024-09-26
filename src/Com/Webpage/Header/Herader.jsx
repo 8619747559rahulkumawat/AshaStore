@@ -55,7 +55,7 @@ const Herader = () => {
         </nav>
         <div className="flex items-center">
           <div className='manu'>
-            <input type="text" placeholder="Search..." className="bg-input text-primary-foreground px-3 py-1 rounded-md mr-2 focus:outline-none" />
+            <input type="text" placeholder="Search..." className="bg-input text-primary-foreground px-3 py-2 rounded-md mr-5  focus:outline-none" />
             <Button className="Serach" variant="contained">Search</Button>
             <AccountCircleIcon />
           </div>
