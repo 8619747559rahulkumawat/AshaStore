@@ -20,7 +20,7 @@ const Slider = () => {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   }
   return (
-    <div>
+    <div className="sliderHOme">
     <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -43,7 +43,7 @@ const Slider = () => {
         <SwiperSlide><img src="https://demo2.posthemes.com/pos_junno/layout4/modules/posslideshows/images/f61e0aec676f88e7212b6c18888231c77c4c57f2_2_4.jpg"></img></SwiperSlide>
         
         <SwiperSlide><img src="https://demo2.posthemes.com/pos_junno/layout4/modules/posslideshows/images/cdc26dd3030922362e3262dde56d5e5bf12227f2_1_4.jpg"></img></SwiperSlide>
-        <SwiperSlide><img src="https://demo2.posthemes.com/pos_junno/layout4/modules/posslideshows/images/f61e0aec676f88e7212b6c18888231c77c4c57f2_2_4.jpg"></img></SwiperSlide>
+        <SwiperSlide><img src="https://demo2.posthemes.com/pos_junno/layout4/modules/posslideshows/images/f61e0aec676f88e7212b6c18888231c77c4c57f2_2_4.jpg"></img></SwiperSlide> 
        
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
