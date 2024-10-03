@@ -38,7 +38,7 @@ const Herader = () => {
   );
   return (
     <div>
-      <header className="bg-primary py-4 px-6 md:px-12 flex justify-between items-center bg-red-500 text-white">
+      <header className="py-4 px-6 md:px-12 flex justify-between items-center Header-main">
         <img className="logo" src="img/logo.jpeg" alt="E-commerce Logo" />
         <nav className="hidden md:flex space-x-4">
          <div className="data">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FilterComponent.css';
+import Card from '../Card/Card';
 
 const FilterComponent = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -8,21 +9,21 @@ const FilterComponent = () => {
     setActiveFilter(filter);
   };
 
-  const items = [
-    { name: 'BMW', categories: ['cars'] },
-    { name: 'Orange', categories: ['colors', 'fruits'] },
-    { name: 'Volvo', categories: ['cars'] },
-    { name: 'Red', categories: ['colors'] },
-    { name: 'Ford', categories: ['cars'] },
-    { name: 'Blue', categories: ['colors'] },
-    { name: 'Cat', categories: ['animals'] },
-    { name: 'Dog', categories: ['animals'] },
-    { name: 'Melon', categories: ['fruits'] },
-    { name: 'Kiwi', categories: ['fruits', 'animals'] },
-    { name: 'Banana', categories: ['fruits'] },
-    { name: 'Lemon', categories: ['fruits'] },
-    { name: 'Cow', categories: ['animals'] },
-  ];
+  // const items = [
+  //   { name: 'BMW', categories: ['cars'] },
+  //   { name: 'Orange', categories: ['colors', 'fruits'] },
+  //   { name: 'Volvo', categories: ['cars'] },
+  //   { name: 'Red', categories: ['colors'] },
+  //   { name: 'Ford', categories: ['cars'] },
+  //   { name: 'Blue', categories: ['colors'] },
+  //   { name: 'Cat', categories: ['animals'] },
+  //   { name: 'Dog', categories: ['animals'] },
+  //   { name: 'Melon', categories: ['fruits'] },
+  //   { name: 'Kiwi', categories: ['fruits', 'animals'] },
+  //   { name: 'Banana', categories: ['fruits'] },
+  //   { name: 'Lemon', categories: ['fruits'] },
+  //   { name: 'Cow', categories: ['animals'] },
+  // ];
 
   return (
     <>
@@ -39,7 +40,7 @@ const FilterComponent = () => {
         <button className={`btn ${activeFilter === 'colors' ? 'active' : ''}`} onClick={() => filterSelection('colors')}> Colors</button>
       </div>
 
-      <div className="container">
+      {/* <div className="container">
         {items.map(item => (
           <div
             key={item.name}
@@ -48,6 +49,14 @@ const FilterComponent = () => {
             {item.name}
           </div>
         ))}
+      </div> */}
+      <div className="container">
+        <div className="row">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
       </div>
     </div>
     </>

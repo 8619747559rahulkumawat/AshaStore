@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Autoplay,Pagination } from 'swiper/modules';
 const InstagramFeed = () => {
     return (
         <div>
@@ -38,7 +38,7 @@ const InstagramFeed = () => {
                             spaceBetween: 50,
                         },
                     }}
-                    modules={[Pagination]}
+                    modules={[Autoplay,Pagination]}
                     className="mySwiper"
                 >
                     <SwiperSlide><img className="Instsgarmdatamanu" src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
