@@ -24,7 +24,7 @@
   }
   
   .autoplay-progress {
-    border: 3px solid #a200ff;
+    border: 3px solid #f2bb53;
     position: absolute;
     right: 16px;
     bottom: 16px;
@@ -35,7 +35,7 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #1c0962;
+    color: #000;
     border-radius: 50%;
 }
   
