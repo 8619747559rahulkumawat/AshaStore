@@ -1,6 +1,8 @@
 .Header-main{
     background-color:#f2bb53;
     color: #fff;
+    width: 100%;
+    height: 80px;
 }
 
 img.logo {
@@ -33,6 +35,12 @@ svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-20bmp1-MuiSvgIcon-root {
 .data li {
     float: left;
     margin: 10px;
+    font-weight: 600;
+    font-family: Shoyab;
+}
+.data  a:hover {
+    cursor: pointer;
+    color: #000;
 }
 .data ul {
     margin-top: -1px;

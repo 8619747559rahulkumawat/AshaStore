@@ -1,10 +1,10 @@
 .CardComponent {
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
 .Card_img_component{
     width: 100%;
-    height: 400px;
+    height: 300px;
     overflow: hidden;
     position: relative;
     transition: all 0.5s;
@@ -17,6 +17,13 @@
 .Card_img_component:hover img {
     cursor: pointer;
     transform: scale(1.1);
+}
+.Card_img_component img.cardlogo {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
 }
 .Card_img_component button {
     position: absolute;
@@ -33,7 +40,7 @@
 
 .Card_img_component ul{
     position: absolute;
-    bottom: -20%;
+    bottom: -25%;
     right: 5%;
     transition: all 0.5s;
 }
@@ -62,16 +69,31 @@
 .CardComponent h3 {
     color: #f2bb53;
     font-weight: 500;
-    margin: 6px 0px;
+    margin: 6px 10px;
+    font-family: Shoyab,sans-serif;
 }
 .CardComponent p {
     color: gray;
     font-size: 14px;
-    margin: 5px 0px;
+    margin: 5px 10px;
 }
 .CardComponent p span {
     color: #000;
     font-size: 18px;
     margin: 0px 5px 0px 0px;
     font-weight: 500;
+}
+.CardComponent button.Add-card-button {
+    background-color: #f2bb53;
+    color: #fff;
+    width: 90%;
+    height: 40px;
+    margin: 0px 5%;
+    font-weight: 600;
+    font-family: Shoyab,sans-serif;
+    transition: all 0.5s;
+}
+.CardComponent button.Add-card-button:active {
+  transform: scale(0.95);
+  color: #000;
 }

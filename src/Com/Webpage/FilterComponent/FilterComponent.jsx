@@ -34,10 +34,10 @@ const FilterComponent = () => {
         </div>
       <div id="myBtnContainer">
         <button className={`btn ${activeFilter === 'all' ? 'active' : ''}`} onClick={() => filterSelection('all')}> Show all</button>
-        <button className={`btn ${activeFilter === 'cars' ? 'active' : ''}`} onClick={() => filterSelection('cars')}> Cars</button>
-        <button className={`btn ${activeFilter === 'animals' ? 'active' : ''}`} onClick={() => filterSelection('animals')}> Animals</button>
-        <button className={`btn ${activeFilter === 'fruits' ? 'active' : ''}`} onClick={() => filterSelection('fruits')}> Fruits</button>
-        <button className={`btn ${activeFilter === 'colors' ? 'active' : ''}`} onClick={() => filterSelection('colors')}> Colors</button>
+        <button className={`btn ${activeFilter === 'cars' ? 'active' : ''}`} onClick={() => filterSelection('cars')}>COOKIN</button>
+        <button className={`btn ${activeFilter === 'animals' ? 'active' : ''}`} onClick={() => filterSelection('animals')}> DINING</button>
+        <button className={`btn ${activeFilter === 'fruits' ? 'active' : ''}`} onClick={() => filterSelection('fruits')}> KITCHEN</button>
+        <button className={`btn ${activeFilter === 'colors' ? 'active' : ''}`} onClick={() => filterSelection('colors')}> POOJA GIFTING</button>
       </div>
 
       {/* <div className="container">

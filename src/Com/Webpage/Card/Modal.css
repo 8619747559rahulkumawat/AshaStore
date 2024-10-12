@@ -62,8 +62,22 @@
   text-transform: capitalize;
   font-weight: 600;
 }
+.modal-product-details-component  input[type="number"] {
+  background-color: #000;
+  width: 15%;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 50px;
+  box-shadow: 1px 1px  4px #000;
+  margin: 5% 2% 0% 2%;
+}
 
-
+.modal-product-details-component p.Total-context {
+  font-size: 30px;
+    margin: 0px 10px 0px 0px;
+    font-weight: 600;
+  }
 
 .modal-product-details-component button {
   background-color: #f2bb53;
@@ -78,7 +92,7 @@
   cursor: pointer;
   transform: scale(0.95);
 }
-.modal-product-details-component button:last-child {
+.modal-product-details-component button.Buy-now {
   background-color: rgba(255, 0, 0, 0.932);
   margin-left: 10px;
 }

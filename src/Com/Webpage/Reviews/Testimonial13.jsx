@@ -8,7 +8,7 @@ const testimonialList = [
 	{
 		author: {
 			fullName: "Akshay Kumar",
-			picture: "https://cdn.easyfrontend.com/pictures/testimonial/testimonial_15.png",
+			picture: "img/Ar.png",
 			designation: "Founder / CEO",
 		},
 		rating: 3.5,
@@ -89,7 +89,7 @@ const Testimonial13 = () => {
 						<div className="grid grid-cols-12 gap-y-6 md:gap-x-6 mt-12">
 							<div className="col-span-12 md:col-span-5 lg:col-start-8 text-center lg:order-2">
 								<div className="relative z-[1]">
-									<div className="absolute top-0 left-0 right-0 bottom-0 bg-[#eb5757] rounded-tl-[100px] rounded-br-[100px] md:rounded-tl-[200px] md:rounded-br-[200px] -z-[1]" />
+									<div className="absolute top-0 left-0 right-0 bottom-0 bg-[#f2bb53] rounded-tl-[100px] rounded-br-[100px] md:rounded-tl-[200px] md:rounded-br-[200px] -z-[1]" />
 									<img
 										src={author.picture}
 										alt={author.fullName}

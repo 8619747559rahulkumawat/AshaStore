@@ -9,6 +9,7 @@
 .filter-text-content h2 {
     font-size: 24px;
     font-weight: 700;
+    font-family: Shoyab,sans-serif;
 }
 #myBtnContainer {
     display: flex;
@@ -43,6 +44,7 @@
     padding: 12px 16px;
     background-color: #f1f1f1;
     cursor: pointer;
+    font-family: Shoyab,sans-serif;
   }
   
   .btn:hover {

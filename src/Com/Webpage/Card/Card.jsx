@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Card.css";
 import "./Modal.css"; // Make sure to import the modal CSS if needed
 import "./CardRes.css";
@@ -7,10 +7,31 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import CloseIcon from "@mui/icons-material/Close";
 import ReactImageMagnify from "react-image-magnify";
 import { green } from "@mui/material/colors";
+import { Navigate, useNavigate } from "react-router-dom";
 
 // Modal Component
 const Modal = ({ isOpen, onClose }) => {
+  const [quantity, setQuantity] = useState(1);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [total, setTotal] = useState(0);
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (selectedProduct) {
+      setTotal(selectedProduct.price * quantity);
+    }
+  }, [selectedProduct, quantity]);
+
+
   if (!isOpen) return null;
+
+  const handleQuantityChange = (e) => {
+    setQuantity(parseInt(e.target.value, 10)); // Convert input value to integer
+  };
+
+  const handalnavigate = () =>{
+    navigate('/Checkout')
+  }
 
   return (
     <div className="modal-overlay">
@@ -28,12 +49,12 @@ const Modal = ({ isOpen, onClose }) => {
                     smallImage: {
                       alt: "item1",
                       isFluidWidth: true, // Makes the image responsive
-                      src: "img/item1.jpg", // Required
+                      src: "img/tawa1_.webp", // Required
                       width: 500, // Optional, not needed if isFluidWidth is true
                       height: 800, // Optional, not needed if isFluidWidth is true
                     },
                     largeImage: {
-                      src: "img/item1.jpg", // Required
+                      src: "img/tawa1_.webp", // Required
                       width: 200, // Required
                       height: 1600, // Required
                     },
@@ -50,8 +71,15 @@ const Modal = ({ isOpen, onClose }) => {
                   <span>Rs.430</span> <del>MRP - Rs.480</del>
                 </p>
                 <h3>category:- <span style={{color:'green'}}>Men</span></h3>
+                <input
+                      type="number"
+                      value={quantity}
+                      onChange={handleQuantityChange}
+                    />
                 <button>ADD TO CARD</button>
-                <button>BUY NOW</button>
+                <button className="Buy-now" onClick={handalnavigate} >BUY NOW</button>
+
+                <p className='Total-context'>Total: ₨ {total.toFixed(2)}</p>
               </div>
             </div>
           </div>
@@ -79,10 +107,11 @@ const Card = () => {
         <div className="CardComponent">
           <div className="Card_img_component">
             <img
-              src="img/item1.jpg"
+              src="img/tawa1_.webp"
               alt="item1"
               onClick={handleOpenModal} // Open modal on image click
             />
+            <img src="img/logo.jpeg" alt="logo" className="cardlogo" />
             <button>10%</button>
             <ul>
               <li>
@@ -93,10 +122,11 @@ const Card = () => {
               </li>
             </ul>
           </div>
-          <h3>Round Neck T-Shirt</h3>
+          <h3>Brass Tawa</h3>
           <p>
             <span>Rs.430</span> <del>MRP - Rs.480</del>
           </p>
+          <button className="Add-card-button">Add to card</button>
         </div>
       </div>
 
