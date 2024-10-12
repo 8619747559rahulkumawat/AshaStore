@@ -41,17 +41,17 @@ const InstagramFeed = () => {
                     modules={[Autoplay,Pagination]}
                     className="mySwiper"
                 >
-                    <SwiperSlide><img src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
-                    <SwiperSlide><img src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
-                    <SwiperSlide><img src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
-                    <SwiperSlide><img src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
-                    <SwiperSlide><img src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
-                    <SwiperSlide><img src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
-                    <SwiperSlide><img src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
-                    <SwiperSlide><img src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
-                    <SwiperSlide><img src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
-                    <SwiperSlide><img src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
-                    <SwiperSlide><img src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
+                    <SwiperSlide><img className="Instsgarmdatamanu" src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
+                    <SwiperSlide><img className="Instsgarmdatamanu" src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
+                    <SwiperSlide><img className="Instsgarmdatamanu" src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
+                    <SwiperSlide><img className="Instsgarmdatamanu" src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
+                    <SwiperSlide><img className="Instsgarmdatamanu" src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
+                    <SwiperSlide><img className="Instsgarmdatamanu" src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
+                    <SwiperSlide><img className="Instsgarmdatamanu" src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
+                    <SwiperSlide><img className="Instsgarmdatamanu" src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
+                    <SwiperSlide><img className="Instsgarmdatamanu" src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
+                    <SwiperSlide><img className="Instsgarmdatamanu" src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
+                    <SwiperSlide><img className="Instsgarmdatamanu" src="https://www.demo4.arinfotech.co/clazep/public/storage/instagram/4F959AF3E82C.jpg"></img></SwiperSlide>
 
 
                 </Swiper>
