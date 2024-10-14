@@ -7,14 +7,12 @@ import Reviews from '../Reviews/Reviews'
 import InstagramFeed from '../InstagramFeed/InstagramFeed'
 import Footer from '../Footer/Footer'
 
-import Herader from '../Header/Herader'
-
 const Home = () => {
 
   
   return (
     <div>
-          <Herader/>
+         
    <Slider/>
    <FilterComponent />
    <Secure/>

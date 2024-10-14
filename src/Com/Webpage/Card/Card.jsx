@@ -5,8 +5,6 @@ import "./CardRes.css";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import CloseIcon from "@mui/icons-material/Close";
-import ReactImageMagnify from "react-image-magnify";
-import { green } from "@mui/material/colors";
 import { Navigate, useNavigate } from "react-router-dom";
 
 // Modal Component
@@ -43,8 +41,8 @@ const Modal = ({ isOpen, onClose }) => {
           <div className="row">
             <div className="col-md-3 col-sm-3 col-6">
               <div className="modal-img">
-                {/* <img src="img/item1.jpg" alt="item1" /> */}
-                <ReactImageMagnify
+                <img src="img/item1.jpg" alt="item1" />
+                {/* <ReactImageMagnify
                   {...{
                     smallImage: {
                       alt: "item1",
@@ -60,7 +58,7 @@ const Modal = ({ isOpen, onClose }) => {
                     },
                     isHintEnabled: true, // Enables hint on hover
                   }}
-                />
+                /> */}
               </div>
             </div>
             <div className="col-md-9 col-sm-9 ">
